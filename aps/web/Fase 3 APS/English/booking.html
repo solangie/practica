@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link type="text/css" rel="stylesheet" href="css/Formularios.css" />
+<script src="jquery/lib/jquery.js"></script>
+	<script src="jquery/dist/jquery.validate.js"></script>
+    <script src="jquery/dist/additional-methods.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+<!-- InstanceBegin template="../../Documents/CSS/Templates/usuario.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<link rel="icon" type="favicon.ico" href="images/logo.png" />
+<title>APS</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<p>
+<div id="texto">ACTIVITIES  OF  THE  POLICE  SYSTEM</div>
+<div id="logo">
+<img src="images/logo.png" width="100px" height="100px" alt="logo"/>
+</div>
+<table width="963" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+      <th width="963" scope="col"><ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="Inicio.html">Home</a>        </li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="recreational events.html">Recreation Events</a>        </li>
+        <li><a href="contact us.html">Contact us</a></li>
+        <li><a href="profile.html">Profile</a>        </li>
+      </ul></th>
+    </tr>
+  </table>
+  <img src="images/linea.png" width="999" height="20" alt="linea" />
+   <div id="sesion"><a href="../Indexenglish.html">Cerrar Sesión</a></div>
+      <div id="menu">
+        <p> Signup </p>
+      </div>
+      <div id="contenido">
+      <form id="miFormulario" method="post" action="Cursos.html">
+      
+            Fields indicated with <span style="color: red;">*</span> are mandatory
+
+      <label for="Evento Recreativo">Type courses:</label>
+     <select><option></option>
+           <option>Football</option>
+           <option>Swimming</option>
+           <option>Tennis</option>
+          </select>
+
+        <label class="obligatorio" for="clave">Password:</label>
+        <input name="clavesistema" type="password" id="clave"maxlength="16"value="usuario"/> 
+        
+        <label class="obligatorio" for="Telefono">Phone:</label>
+       <input name="Telefonosistema" type="int" id="Telefono"maxlength="10"value="3119875653"/>
+
+<button type="submit" onclick="MM_popupMsg('La inscripción sera enviada')">Sign up</button>
+<button type="submit" onclick="MM_popupMsg('Seguro que desea cancelar la inscripción')">Cancel</button>
+
+		</form>
+            <!-- *********************************************************
+	Inicio de la sección de validación. Susceptible de ser ubicada en el <head> -->
+	<script>
+	// Función ready que ejecuta su contenido al cargar
+	$().ready(function() {
+		// Validación del formulario, tener en cuenta el ID
+		$("#miFormulario").validate({ // Aplicación de la funcion validate. A continuación se especifican las reglas y los mensajes
+			// Aplicación de REGLAS de validación
+			rules: {
+				// Indique cada input según su atributo NAME
+				// Siguiente input a validar, separado por coma
+			   clavesistema:{
+				required: true,
+					minlength: 5
+			},
+			  Telefonosistema:{
+				required: true,
+				 digits:true,
+				 minlength: 10
+			}
+			}, // Cierre de las reglas, se separa con coma de los mensajes
+			// Mensajes a generar para indicar al usuario la estructura valida que debe ingresar. Se debe indicar por cada regla adicionada anteriormente para sobre escribir los mensajes por defecto (los cuales están en inglés. Se encuentran en "jquery.validate.js" línea 308)
+			messages: {
+				clavesistema:  {
+					required: "Campo requerido",
+					minlength: "Mínimo {0} caracteres",
+				},
+				Telefonosistema: {
+					required: "Campo requerido",
+					minlength: "Mínimo {0} caracteres",
+					digits: "solo digitos"
+				},
+			} // Cierre de los mensajes
+		}); // Cierre de la función validate
+	}); // Cierre de la función ready
+	
+	// NOTA: Revise el archivo "additional-methods" (ya enlazado arriba), para obtener otros métodos de validación como "lettersonly" básico para el trabajo de su sistema de información
+
+	</script>
+      </div>
+<div id="pie"><strong><br />
+ . :: National Service for Training SENA ::. <br />
+Financial Services Centre - Capital Regional District <br />
+Phone: (01) 546 1500 Address: Carrera 13 No. 65-10</div>
+</td>
+    </tr>
+  </table>
+
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+  </script>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

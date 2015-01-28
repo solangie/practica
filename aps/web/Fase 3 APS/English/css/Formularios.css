@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	width: 80%;
+	margin:10px auto;
+	color: #666666;
+	padding: 0 50px 0 50px;
+	text-align:center;
+}
+#logo{
+	min-width: 10%;
+	height: 100px;
+	float: left;
+	padding-left: 60px;
+}
+#texto{
+	width: 80%;
+	height: 100px;
+	text-align:center;
+	line-height: 100px;
+	color:#000;
+	font-size:40px;
+	float: right;
+	padding-right: 30px;
+}
+#sesion{
+	color:black;
+	text-align:right;
+}
+main{
+	margin: auto;
+	text-align: center;
+}
+label{
+   display:	block;	
+   margin-top: 5px;
+}
+input, select{
+	display: block;
+	width: 200px;
+	margin:auto;
+	padding: 5px;
+}
+form{
+	width:40%;
+	min-height: 250px;
+	margin: auto;
+	background-color: rgba(255, 255, 238, 0.3);
+	padding:20px;
+	border-radius: 20px;
+	background-color: #cedce7 0%, #596a72 100%;
+	box-shadow: 0 0 10px #FFF;
+}
+legend{
+	font-weight: bold;
+}
+.obligatorio::after{
+	content: " *";
+	color: red;
+	}
+label.error{
+	color: red;
+}
+input:focus{
+	border: 1px solid blue;
+	box-shadow: 0 0 3px blue;
+}
+input.error{
+	border: 1px solid #C00;
+}
+button{
+	margin: 20px;
+	background-color:rgb(70,113,19);
+	color:#FFF;
+}
+header{
+	width: 100%;
+	height: 100px;	
+}
+#menu{
+	width: 100%;
+	height: 80px;
+	line-height: 80px; /* centrar verticalmente el texto, si tiene la misma altura de la caja */
+	background-color: rgb(70,113,19);
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #FFF;
+	float: none;
+	font-size: 26px;
+	font-style: normal;
+}
+#contenido{
+	width: 100%;
+	min-height: 300px;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 14px;
+	background: #cedce7;
+    background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
+    background: -webkit-linear-gradient(top, #cedce7 0%,#596a72 100%); 
+    background: -o-linear-gradient(top, #cedce7 0%,#596a72 100%);
+    background: -ms-linear-gradient(top, #cedce7 0%,#596a72 100%); 
+    background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 );
+}
+
+#pie{
+	width: 100%;
+	height: 100px;
+	color: #FFF;
+	margin-top: 5px;
+	float:left;
+	background-color: #000;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); 
+}

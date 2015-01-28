@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="favicon.ico" href="imagenes/logo.png" />
+<link type="text/css" rel="stylesheet" href="css/Estilo.css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<title>APS</title>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<p>
+<div id="texto">ACTIVITIES  OF  THE  POLICE  SYSTEM</div>
+<div id="logo">
+<img src="imagenes/logo.png" width="100px" height="100px" alt="logo"/>
+</div>
+<table width="583" border="0" align="center">
+  <tr align="center">
+    <td width="577"><ul id="MenuBar1" class="MenuBarHorizontal">
+      <li><a href="index.html"><strong>Inicio</strong></a>        </li>
+      <li><a href="Conocenos.html"><strong>Conocenos</strong></a></li>
+      <li><a href="Ingresar.html"><strong>Ingresar</strong></a>        </li>
+</ul></td>
+  </tr>
+</table>
+<table width="598" border="0" align="center">
+  <tr>
+    <td><img src="imagenes/linea.png" width="604" height="20" alt="linea" /></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center">
+  <tr>
+    <td align="center"><div id="contenido">
+      <table width="431" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <th width="495" align="center" valign="middle" scope="col"><div align="center"><img src="Administrador/imagenes/recreacion-y-deportes.jpg" width="427" height="216" align="middle" /></div></th>
+        </tr>
+    </table>
+      <p>&nbsp;</p>
+      <table width="434" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <th width="434" align="center" valign="middle" scope="col"><img src="Administrador/imagenes/pisicina.jpg" width="434" height="262" /></th>
+        </tr>
+      </table>
+    </div>
+<div id="pie"><strong><br />
+  .:: Servicio Nacional de Aprendizaje SENA ::.<br />
+Centro de Servicios Financieros - Regional Distrito Capital<br />
+Teléfono: (01)546 1500 Dirección: Carrera 13 No. 65 - 10</strong></div>
+</td>
+  </tr>
+</table>
+<p>&nbsp; </p>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+  </script>
+</body>
+<body>
+</body>
+</html>

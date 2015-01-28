@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link type="text/css" rel="stylesheet" href="../css/Formularios.css" />
+<script src="../jquery/lib/jquery.js"></script>
+	<script src="../jquery/dist/jquery.validate.js"></script>
+    <script src="../jquery/dist/additional-methods.js"></script>
+<!-- InstanceBegin template="../../../Documents/CSS/Templates/usuario.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<link rel="icon" type="favicon.ico" href="imagenes/logo.png" />
+<title>APS Reportes</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<p>
+<div id="texto">ACTIVITIES  OF  THE  POLICE  SYSTEM</div>
+<div id="logo"><img src="imagenes/logo.png" width="100px" height="100px" alt="logo"/>
+</div>
+<table width="962" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="962" align="center"><ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="Inicio.html"><strong>Inicio</strong></a>          </li>
+        <li><a href="cursos.html"><strong>Cursos</strong></a></li>
+        <li><a href="Eventos Recreativos.html"><strong>Eventos Recreativos</strong></a>          </li>
+        <li><a href="Reportes.html"><strong>Reportes</strong></a></li>
+        <li><a href="Perfil.html"><strong>Perfil</strong></a>        </li>
+      </ul></th>
+    </tr>
+  </table>
+  <img src="imagenes/linea.png" width="999" height="20" alt="linea" />
+         <div id="sesion"><a href="../../Index.html">Cerrar Sesión</a></div>
+          <div id="menu">Reporte</div>
+          <div id="contenido">
+
+ <form id="miFormulario" method="post" action=index.administracion.html>
+           Los campos indicados con * son obligatorios
+			<label for="Evento_Recreativo">Tipo de reporte:</label>
+           
+            <select>
+               <option></option>
+               <option>Eventos recreativos</option>
+               <option>Cursos</option>
+           </select>
+              
+            <label class="obligatorio" for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave" maxlength="16" tabindex="1" required/>
+           <p></p> 
+<button type="submit" onclick="MM_popupMsg('Su reporte sera generado')"><a href="file:///C|/Users/Aprendiz/Desktop/Fase 3 APS/Español/documento/REPORTE RESERVADA.pdf" target="_blank">Reporte</a></button>
+<button type="submit" onclick="MM_popupMsg('Desea cancelar su reporte')"><a href="Inicio.html">Cancelar</a></button>
+
+		</form>
+ 
+          <!-- *********************************************************
+	Inicio de la sección de validación. Susceptible de ser ubicada en el <head> -->
+	<script>
+	// Función ready que ejecuta su contenido al cargar
+	$().ready(function() {
+		// Validación del formulario, tener en cuenta el ID
+		$("#miFormulario").validate({ // Aplicación de la funcion validate. A continuación se especifican las reglas y los mensajes
+			// Aplicación de REGLAS de validación
+			rules: {
+			
+					// Indique las reglas a validar, entre estos corchetes, separadas por comas
+					// Si la regla es un parametro booleano, sólo indicar que es verdadero (true), si es numérico indicar el valor
+					clave: {
+					required: true,
+					minlength: 5
+				},
+			}, // Cierre de las reglas, se separa con coma de los mensajes
+
+			// Mensajes a generar para indicar al usuario la estructura valida que debe ingresar. Se debe indicar por cada regla adicionada anteriormente para sobre escribir los mensajes por defecto (los cuales están en inglés. Se encuentran en "jquery.validate.js" línea 308)
+			messages: {
+			clave: {
+					required: "Campo requerido",
+					minlength: "Mínimo {0} caracteres"
+				},
+			} // Cierre de los mensajes
+		}); // Cierre de la función validate
+	}); // Cierre de la función ready
+	
+	// NOTA: Revise el archivo "additional-methods" (ya enlazado arriba), para obtener otros métodos de validación como "lettersonly" básico para el trabajo de su sistema de información
+
+	</script>
+</div>
+    </div>
+<div id="pie">.:: Servicio Nacional de Aprendizaje SENA ::.<br />
+Centro de Servicios Financieros - Regional Distrito Capital<br />
+Teléfono: (01)546 1500 Dirección: Carrera 13 No. 65 - 10</div>
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
